@@ -1,7 +1,7 @@
 public class MaquinaExpendedoraSimple {
     
     // El precio del billete
-    private int precioBillete;
+    private String precioBillete;
     // La cantidad de dinero que lleva metida el cliente actual
     private int balanceClienteActual;
     // El total de dinero almacenado en la maquina desde su ultimo vaciado
@@ -16,18 +16,18 @@ public class MaquinaExpendedoraSimple {
      * precio del billete y el origen y destino dados. Se asume que el precio
      * del billete que se recibe es mayor que 0.
      */
-    public MaquinaExpendedoraSimple(int precioDelBillete, String origen, String destino) {
-        precioBillete = precioDelBillete;
+    public MaquinaExpendedoraSimple() {
+        precioBillete = "12";
         balanceClienteActual = 0;
         totalDineroAcumulado = 0;
-        estacionOrigen = origen;
-        estacionDestino = destino;
+        estacionOrigen = "León";
+        estacionDestino = "Bilbao";
     }
 
     /**
      * Devuelve el precio del billete
      */
-    public int getPrecioBillete() {
+    public String getPrecioBillete() {
         return precioBillete;
     }
 
