@@ -67,12 +67,19 @@ public class MaquinaExpendedoraSimple {
     public void setPrecioBillete(int precioDelBillete) {
         precioBillete = precioDelBillete;
     }
-    
+     
     /**
      * Permite reducir el precio del billete
      */
     public void rebajarPrecioDelBillete(int descuentoBillete) {
         precioBillete = precioBillete - descuentoBillete;
+    }
+    
+    /**
+     * Permite extraer el dinero acumulado desde su último vaciado
+     */
+    public void vaciarDepositoDinero() {
+        totalDineroAcumulado = 0;
     }
     
     /**
